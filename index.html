@@ -342,38 +342,7 @@
 
     </style>
 </head>
-    <!-- LIGHTBOX -->
-<div id="lightbox" style="
-    display:none;
-    position:fixed;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-    background:rgba(0,0,0,0.9);
-    justify-content:center;
-    align-items:center;
-    z-index:2000;
-">
-    <img id="lightbox-img" style="max-width:90%; max-height:90%; border-radius:10px;">
-
-    <script>
-    const lightbox = document.getElementById('lightbox');
-    const lightboxImg = document.getElementById('lightbox-img');
-
-    document.querySelectorAll('.gallery-item img').forEach(img => {
-        img.addEventListener('click', () => {
-            lightbox.style.display = 'flex';
-            lightboxImg.src = img.src;
-        });
-    });
-
-    lightbox.addEventListener('click', () => {
-        lightbox.style.display = 'none';
-    });
-</script>
-    
-</div>
+  
 <body>
   
     <a href="https://wa.me/5583986171121?text=Olá! Quero garantir minha vaga agora 🔥 Ainda tem disponibilidade?" class="whatsapp-float" target="_blank">
@@ -589,6 +558,38 @@ Mais de 70% das vagas já foram preenchidas.
                 <p style="font-size:0.85rem; opacity:0.7;">Empresa de turismo com atendimento profissional e suporte direto ao cliente.</p>
                 <p style="font-size:0.80rem; opacity:0.6;">Passeio Natuba - Domingo, 27 de Setembro de 2026.</p>
         <p style="margin-top: 30px; font-size: 0.8rem; opacity: 0.5;">&copy; 2026 Todos os direitos reservados.</p>
-    </footer>        
+    </footer>  
+      <!-- LIGHTBOX -->
+<div id="lightbox" style="
+    display:none;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.9);
+    justify-content:center;
+    align-items:center;
+    z-index:2000;
+">
+    <img id="lightbox-img" style="max-width:90%; max-height:90%; border-radius:10px;">
+
+    <script>
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+
+    document.querySelectorAll('.gallery-item img').forEach(img => {
+        img.addEventListener('click', () => {
+            lightbox.style.display = 'flex';
+            lightboxImg.src = img.src;
+        });
+    });
+
+    lightbox.addEventListener('click', () => {
+        lightbox.style.display = 'none';
+    });
+</script>
+    
+</div>
 </body>
 </html>
